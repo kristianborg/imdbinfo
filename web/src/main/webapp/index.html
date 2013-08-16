@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>admin console</title>
+        <link rel="stylesheet" href="css/admin.css" type="text/css">
+    </head>
+    <body>
+
+        <div id="header">
+            number of movies: <c:out value="${numMovies}"/> number of actors: <c:out value="${numActors}"/><br/>
+        </div>
+
+        <div id="menu">
+            <span class="active"><a href="#">List Movies</a></span>
+            <span><a href="#">List Actors</a></span>
+            <span><a href="#">Add Data</a></span>
+        </div>
+
+        <form method="POST" commandName="crawlUrl">
+            <div class="form">
+                <label>
+                    <span>IMDB Url to crawl</span>
+                    <input type="text" class="input_text" >
+                </label>
+                <label>
+                    <span>IMDB Url to crawl</span>
+                    <select path="crawlDepth" class="input_text">
+                        <option value="1"/>
+                        <option value="2"/>
+                        <option value="3"/>
+                    </select>
+                </label>
+                <label>
+                    <input type="submit" class="button"/>
+                </label>
+            </div>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="nl.krisborg.imdbinfo.dto.Actor" table="ACTORS">
+        <id name="id" column="ID">
+            <generator class="increment"/>
+        </id>
+        <version name="version" column="VERSION"/>
+        <property name="name" column="NAME" type="string" />
+        <property name="url" column="URL" type="string" />
+        <property name="crawled" column="CRAWLED" type="boolean" />
+        <set name="movies" table="ACTOR_MOVIES" lazy="false">
+            <key column="ACTOR_ID"/>
+            <element column="URL" type="string"/>
+        </set>
+    </class>
+</hibernate-mapping>

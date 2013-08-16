@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--<bean id="chartListHtmlConverter" class="nl.krisborg.converters.ImdbChartListHtmlConverter"/>-->
+    <!--<bean id="movieHtmlConverter" class="nl.krisborg.imdbinfo.util.ImdbMovieHtmlConverter"/>
+    <bean id="actorHtmlConverter" class="nl.krisborg.imdbinfo.util.ImdbActorHtmlConverter"/>-->
+
+    <bean id="imdbSiteDao" class="nl.krisborg.imdbinfo.dao.ImdbSiteDaoImpl"/>
+
+</beans>
