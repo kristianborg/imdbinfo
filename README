@@ -1,0 +1,3 @@
+Work-in-progress: A game that shows 2 random actors, and asks the users to link these actors to eachother via via, through movies they played in.
+
+Makes use of Maven, Spring and Hibernate, and crawls http://www.imdb.com for information regarding actors and movies.
